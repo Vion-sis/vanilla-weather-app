@@ -1,0 +1,17 @@
+body {
+  background-size: 100%;
+  background-image: url("https://keen-leavitt-bae97b.netlify.app/images/ryan-hutton-Jztmx9yqjBw-unsplash.jpg");
+  font-family: "Urbanist", sans-serif;
+  padding: 100px 50px; 
+}
+.vanilla-app {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #27296d;
+  border-radius: 25px;
+  background: #ffffff;
+  max-width: 720px;
+  width: 100%;
+  padding: 50px 50px;
+  box-sizing: border-box;
+}
