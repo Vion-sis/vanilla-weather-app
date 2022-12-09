@@ -28,6 +28,9 @@ small {
   display: block;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 .header {
   display: block;
   margin-bottom: -5px;
@@ -47,10 +50,6 @@ small {
   box-sizing: border-box;
 }
 
-.Weather-btn {
-  background: #ffe168;
-  border: none;
-}
 .col-9 {
   background: #f9f7fe;
   border: none;
@@ -84,4 +83,11 @@ small {
   display: block;
   margin-top: 0px;
   padding: 0px;
+}
+.active {
+  color: #878787;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }

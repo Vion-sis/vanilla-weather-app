@@ -31,7 +31,7 @@
               <input
                 type="submit"
                 value="search"
-                class="form-control btn btn-primary Weather-btn"
+                class="form-control btn btn-primary"
               />
             </div>
           </div>
@@ -41,12 +41,14 @@
           <div class="col-6">
             <div class="header">
               <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                src=""
                 alt=""
+                id="icon"
               />
               <span class="temp">
                 <span id="current-temp"></span
-                ><span class="units">°C | °F</span>
+                ><span class="units"> <a id="celcius" class="active" href="#">°C </a>|
+                <a id="fah" href="#">°F</a>
               </span>
             </div>
             <ul class="right details">
