@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla weather app</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,7 +17,7 @@
   <body>
     <div class="container">
       <div class="vanilla-app">
-        <form>
+        <form id="search-text">
           <div class="row">
             <div class="col-md-9">
               <input
@@ -43,25 +44,35 @@
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt=""
               />
-              <span class="temp"> 12 <span class="units">°C | °F</span> </span>
+              <span class="temp">
+                <span id="current-temp"></span
+                ><span class="units">°C | °F</span>
+              </span>
             </div>
-            <ul class=" right details">
-              <li>Humidity: 62%</li>
-              <li>Wind: 4m/s</li>
+            <ul class="right details">
+              <li id="current-humidity"></li>
+              <li id="current-wind"></li>
             </ul>
           </div>
           <div class="col-6">
-            <h1>New York, NY, USA</h1>
+            <h1><span id="name"> </span><span id="country">USA</span></h1>
 
-            <span class="more details">
-              Last Updated: 04:00
+            <div class="more details">
+              Last Updated: <span id="time">04:00</span> <br /><span
+                id="day"
+              ></span>
               <br />
-              Clear Sky
-            </span>
+              <span class="desc" id="description">Clear Sky</span>
+            </div>
           </div>
         </div>
       </div>
-      <small>coded by viona ntitai <a href="https://github.com/Vion-sis/vanilla-weather-app"> open source code</a></small>
+      <small
+        >coded by viona ntitai
+        <a href="https://github.com/Vion-sis/vanilla-weather-app">
+          open source code</a
+        ></small
+      >
     </div>
 
     <script src="src/app.js"></script>
