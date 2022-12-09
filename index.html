@@ -35,32 +35,35 @@
             </div>
           </div>
         </form>
-        <h1>New York</h1>
-        <div>
-          Last Updated
-          <br />
-          Clear Sky
-        </div>
-
+        <br />
         <div class="row">
           <div class="col-6">
-            <ul>
-              <li>Humidity</li>
-              <li>Wind</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <div>
+            <div class="header">
               <img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                 alt=""
               />
-              12°C|°F
+              <span class="temp"> 12 <span class="units">°C | °F</span> </span>
             </div>
+            <ul class=" right details">
+              <li>Humidity: 62%</li>
+              <li>Wind: 4m/s</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h1>New York, NY, USA</h1>
+
+            <span class="more details">
+              Last Updated: 04:00
+              <br />
+              Clear Sky
+            </span>
           </div>
         </div>
       </div>
+      <small>coded by viona ntitai <a href="https://github.com/Vion-sis/vanilla-weather-app"> open source code</a></small>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
