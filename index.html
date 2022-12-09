@@ -17,10 +17,24 @@
     <div class="container">
       <div class="vanilla-app">
         <form>
-          <input type="text" placeholder="text a city.." name="" id="" />
-          <input type="submit" value="Search" name="" id="" />
+          <div class="row">
+            <div class="col-md-9">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                class="form-control"
+                id="text-input"
+              />
+            </div>
+            <div class="col-md-3">
+              <input
+                type="submit"
+                value="search"
+                class="form-control btn btn-primary Weather-btn"
+              />
+            </div>
+          </div>
         </form>
-
         <h1>New York</h1>
         <div>
           Last Updated
